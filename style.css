@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+/* Container */
+.datepicker-container {
+  position: relative;
+  width: 280px;
+}
+
+/* Input */
+.date-input {
+  display: flex;
+}
+
+.date-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-right: none;
+}
+
+.calendar-btn {
+  padding: 10px;
+  border: 1px solid #999;
+  background: white;
+  cursor: pointer;
+}
+
+/* Calendar */
+.calendar {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  border: 1px solid #999;
+  background: white;
+  padding: 10px;
+}
+
+/* Header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+/* Days */
+.calendar-days,
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.calendar-days span {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Dates */
+.calendar-dates span {
+  padding: 6px 0;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.calendar-dates span:hover {
+  background: #e0e0e0;
+}
